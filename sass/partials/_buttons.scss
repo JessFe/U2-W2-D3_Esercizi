@@ -1,0 +1,35 @@
+/*
+$colorKeys: blue, yellow, green;
+
+@each $elem in $colorKeys {
+  .btn-#{$elem} {
+    background-color: $elem;
+  }
+}
+*/
+
+.btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+
+  &-1 {
+    background-color: scale-color($btn-1-color, $lightness: 50%);
+    border-color: $btn-1-color;
+    color: scale-color($btn-1-color, $lightness: -60%);
+  }
+  &-2 {
+    background-color: scale-color($btn-2-color, $lightness: 50%);
+    border-color: $btn-2-color;
+    color: scale-color($btn-2-color, $lightness: -60%);
+  }
+  &-2 {
+    background-color: scale-color($btn-3-color, $lightness: 50%);
+    border-color: $btn-3-color;
+    color: scale-color($btn-3-color, $lightness: -60%);
+  }
+}

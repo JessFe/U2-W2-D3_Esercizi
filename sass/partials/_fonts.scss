@@ -1,0 +1,25 @@
+$main-font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+$title-1-size: 4rem;
+$text-sm-size: 0.5rem;
+$text-md-size: 1rem;
+$text-lg-size: 2rem;
+
+body {
+  color: $text-color;
+  font: {
+    family: $main-font;
+    weight: 400;
+    size: $text-md-size;
+    style: normal;
+  }
+}
+
+@mixin title-big {
+  font-size: $title-1-size;
+  font-weight: 700;
+  color: $text-color;
+}
+
+h1 {
+  @include title-big;
+}
